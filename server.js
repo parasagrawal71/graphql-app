@@ -15,16 +15,16 @@ const schema = new GraphQLSchema({
 });
 
 app.use(
-  "/graphql",
+  "/",
   graphqlHTTP({
     schema: schema,
     graphiql: true,
   })
 );
 
-app.get("/", (req, res) => {
-  res.send("Welcome to GraphQL app");
-});
+// app.get("/healthcheck", (req, res) => {
+//   res.send("Welcome to GraphQL app");
+// });
 
 app.listen(PORT, () => {
   console.log(`Server running on ${PORT}`);
