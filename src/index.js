@@ -9,6 +9,7 @@ const PORT = process.env.PORT || 6100;
 const server = new ApolloServer({
   typeDefs,
   resolvers,
+  introspection: true,
 });
 
 const { url } = await startStandaloneServer(server, { listen: { port: PORT } });
