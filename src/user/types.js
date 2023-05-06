@@ -21,5 +21,6 @@ export const UserTypes = `
     # All queries
     type Query {
         users: [User]
+        user(id: Int): User
     }
 `;
