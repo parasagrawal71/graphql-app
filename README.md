@@ -4,7 +4,7 @@
 
 <div align="center">
   <a href="https://github.com/parasagrawal71/graphql-app">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain-wordmark.svg" alt="Logo" width="80" height="80">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" alt="Logo" width="80" height="80">
   </a>
   <h3 align="center">GraphQL App</h3>
   <p align="center">
@@ -69,8 +69,6 @@ A GraphQL server
 <!-- PROJECT SPECIFIC LINKS -->
 
 [website-link]: https://graphql-app.up.railway.app/
-
-[product-screenshot]:
 [product-gif]: src/assets/graphql-app.gif
 
 <!-- SKILLS -->
