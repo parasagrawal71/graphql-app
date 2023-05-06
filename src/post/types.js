@@ -5,7 +5,8 @@ export const PostTypes = `
         id: Int,
         title: String,
         body: String,
-        comments: [Comment]
+        comments: [Comment],
+        user: User,
     }
 
     # All queries
