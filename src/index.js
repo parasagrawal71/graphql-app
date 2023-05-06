@@ -4,11 +4,13 @@ import { startStandaloneServer } from "@apollo/server/standalone";
 // CUSTOM IMPORTs
 import { typeDefs, resolvers } from "./schema.js";
 
+const PORT = process.env.PORT || 6100;
+
 const server = new ApolloServer({
   typeDefs,
   resolvers,
 });
 
-const { url } = await startStandaloneServer(server, { listen: { port: 6100 } });
+const { url } = await startStandaloneServer(server, { listen: { port: PORT } });
 
 console.log(`🚀  Server ready at: ${url}`);
