@@ -1,6 +1,7 @@
 // CUSTOM IMPORTs
 import { PostTypes, PostQuery, PostResolvers } from "./post/index.js";
 import { CommentTypes, CommentQuery } from "./comment/index.js";
+import { UserTypes, UserQuery, UserResolvers } from "./user/index.js";
 
 /**
  * Schema
@@ -8,6 +9,7 @@ import { CommentTypes, CommentQuery } from "./comment/index.js";
 const typeDefs = `#graphql
     ${PostTypes}
     ${CommentTypes}
+    ${UserTypes}
 `;
 
 /**
@@ -17,9 +19,11 @@ const resolvers = {
   Query: {
     ...PostQuery,
     ...CommentQuery,
+    ...UserQuery,
   },
   // Mutation: {},
   Post: PostResolvers,
+  User: UserResolvers,
 };
 
 export { typeDefs, resolvers };
