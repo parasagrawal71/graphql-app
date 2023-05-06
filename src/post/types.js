@@ -1,8 +1,8 @@
 export const PostTypes = `
     # Queryable fields
     type Post {
-        userId: Float,
-        id: Float,
+        userId: Int,
+        id: Int,
         title: String,
         body: String,
     }
