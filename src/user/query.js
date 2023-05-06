@@ -15,6 +15,14 @@ export const UserQuery = {
   },
 
   userByEmail: (parent, args) => {
+    /**
+     * Example query:-
+     * query UserByEmail {
+     *   userByEmail(data: {email: "Shanna@melissa.tv"}) {
+     *     email
+     *   }
+     * }
+     */
     return UserDataset.filter((user) => {
       if (user.email === args.data.email) {
         return user;
