@@ -10,6 +10,7 @@ export const PostTypes = `
 
     # All queries
     type Query {
-        posts: [Post]
+        posts: [Post],
+        post(id: Int): Post
     }
 `;
