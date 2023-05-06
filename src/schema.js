@@ -1,7 +1,12 @@
 // CUSTOM IMPORTs
 import { PostTypes, PostQuery, PostResolvers } from "./post/index.js";
 import { CommentTypes, CommentQuery } from "./comment/index.js";
-import { UserTypes, UserQuery, UserResolvers } from "./user/index.js";
+import {
+  UserTypes,
+  UserQuery,
+  UserResolvers,
+  UserMutation,
+} from "./user/index.js";
 
 /**
  * Schema
@@ -21,7 +26,9 @@ const resolvers = {
     ...CommentQuery,
     ...UserQuery,
   },
-  // Mutation: {},
+  Mutation: {
+    ...UserMutation,
+  },
   Post: PostResolvers,
   User: UserResolvers,
 };

@@ -23,4 +23,9 @@ export const UserTypes = `
         users: [User]
         user(id: Int): User
     }
+
+    # Mutations
+    type Mutation {
+        userCreate(id: Int, name: String): User,
+    }
 `;
