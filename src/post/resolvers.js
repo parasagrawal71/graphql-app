@@ -1,3 +1,11 @@
+import { CommentDataset } from "../comment/index.js";
+
 export const PostResolvers = {
-  posts: (parent, args) => {},
+  comments: (post, args) => {
+    return CommentDataset.filter((comment) => {
+      if (comment.postId === post.id) {
+        return comment;
+      }
+    });
+  },
 };

@@ -1,5 +1,6 @@
-// export { PostModel } from "./db";
+// export { CommentModel } from "./db.js";
+export { CommentDataset } from "./db.js";
 export { CommentTypes } from "./types.js";
 export { CommentQuery } from "./query.js";
-// export { PostMutation } from "mutation.js";
+// export { CommentMutation } from "mutation.js";
 export { CommentResolvers } from "./resolvers.js";

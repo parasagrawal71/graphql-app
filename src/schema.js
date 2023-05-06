@@ -1,5 +1,5 @@
 // CUSTOM IMPORTs
-import { PostTypes, PostQuery } from "./post/index.js";
+import { PostTypes, PostQuery, PostResolvers } from "./post/index.js";
 import { CommentTypes, CommentQuery } from "./comment/index.js";
 
 /**
@@ -19,6 +19,7 @@ const resolvers = {
     ...CommentQuery,
   },
   // Mutation: {},
+  Post: PostResolvers,
 };
 
 export { typeDefs, resolvers };
