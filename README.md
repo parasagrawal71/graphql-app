@@ -41,12 +41,17 @@
 
 [![GraphQL App][product-gif]][website-link]
 
-A GraphQL server
+A server based on GraphQL that provides the capability to perform queries on posts, comments on a post, and their associated users. Additionally, it allows one to add new users and modify existing user data.
 
 ### Features
 
 - Queries
+  - Posts
+  - Comments on a post
+  - Users
 - Mutation
+  - Add a user
+  - Update user data
 
 <p align="right">(<a href="#top">Back to top</a>)</p>
 
