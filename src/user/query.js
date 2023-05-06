@@ -13,4 +13,12 @@ export const UserQuery = {
     });
     return filteredUserArr[0];
   },
+
+  userByEmail: (parent, args) => {
+    return UserDataset.filter((user) => {
+      if (user.email === args.data.email) {
+        return user;
+      }
+    })[0];
+  },
 };

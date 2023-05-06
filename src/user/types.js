@@ -22,10 +22,16 @@ export const UserTypes = `
     type Query {
         users: [User]
         user(id: Int): User
+        userByEmail(data: userByEmailInput): User
     }
 
     # Mutations
     type Mutation {
         userCreate(id: Int, name: String): User,
+    }
+
+    # Inputs
+    input userByEmailInput {
+        email: String,
     }
 `;
