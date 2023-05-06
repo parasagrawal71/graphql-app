@@ -10,7 +10,6 @@ export const UserTypes = `
         address: Address
         posts: [Post]
     }
-
     type Address {
         street: String,
         suite: String,
@@ -28,10 +27,15 @@ export const UserTypes = `
     # Mutations
     type Mutation {
         userCreate(id: Int, name: String): User,
+        userUpdate(id: Int, data: userUpdateDataInput): User,
     }
 
     # Inputs
     input userByEmailInput {
+        email: String,
+    }
+    input userUpdateDataInput {
+        name: String,
         email: String,
     }
 `;
