@@ -1,4 +1,4 @@
-import { UserDataset } from "./db.js";
+import { UserDataset } from "./data.js";
 
 export const UserQuery = {
   users: (parent, args) => {

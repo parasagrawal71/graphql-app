@@ -1,4 +1,4 @@
-import { PostDataset } from "./db.js";
+import { PostDataset } from "./data.js";
 
 export const PostQuery = {
   posts: (parent, args) => {

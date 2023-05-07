@@ -1,4 +1,4 @@
-import { CommentDataset } from "./db.js";
+import { CommentDataset } from "./data.js";
 
 export const CommentQuery = {
   comments: (parent, args) => {
