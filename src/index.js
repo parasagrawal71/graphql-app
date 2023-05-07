@@ -1,5 +1,6 @@
 import { ApolloServer } from "@apollo/server";
 import { startStandaloneServer } from "@apollo/server/standalone";
+import "./utils/db.connect.js";
 
 // CUSTOM IMPORTs
 import { typeDefs, resolvers } from "./schema.js";
