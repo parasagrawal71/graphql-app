@@ -26,16 +26,29 @@ export const UserTypes = `
 
     # Mutations
     type Mutation {
-        userCreate(id: Int, name: String): User,
-        userUpdate(id: Int, data: userUpdateDataInput): User,
+        addUser(data: addUserDataInput): User,
+        updateUser(id: Int, data: updateUserDataInput): User,
     }
 
     # Inputs
     input userByEmailInput {
         email: String,
     }
-    input userUpdateDataInput {
+    input addUserDataInput {
+        name: String!,
+        username: String!,
+        email: String!,
+    }
+    input updateUserDataInput {
         name: String,
-        email: String,
+        phone: String,
+        website: String,
+        address: AddressInput,
+    }
+    input AddressInput {
+        street: String,
+        suite: String,
+        city: String,
+        zipcode: String,
     }
 `;

@@ -1,4 +1,4 @@
-// export { UserModel } from "./db.js";
+export { UserModel } from "./model.js";
 export { UserDataset } from "./data.js";
 export { UserTypes } from "./types.js";
 export { UserQuery } from "./query.js";
