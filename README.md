@@ -41,11 +41,11 @@
 
 [![GraphQL App][product-gif]][website-link]
 
-A server based on GraphQL that provides the capability to perform queries on posts, comments on a post, and their associated users. Additionally, it allows one to add new users and modify existing user data.
+A server based on GraphQL that provides the capability to perform queries on posts, comments related to the posts, and users. Additionally, it allows one to add new users and modify existing user data.
 
 ### Features
 
-- Queries
+- Queries on
   - Posts
   - Comments on a post
   - Users
@@ -62,6 +62,11 @@ A server based on GraphQL that provides the capability to perform queries on pos
 - [![GraphQL][graphql-icon]][icon-url]
 - [![Node.js][node-icon]][icon-url]
 - [![JavaScript][javascript-icon]][icon-url]
+
+#### Database & ODM
+
+- [![MongoDB][mongodb-icon]][icon-url]
+- [![Mongoose][mongoose-icon]][icon-url]
 
 #### DevOps
 
