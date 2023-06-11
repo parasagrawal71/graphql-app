@@ -4,6 +4,6 @@ services:
     container_name: graphql-app
     image: graphql-app:1.0.0
     restart: always
-    env_file: ./.env
+    env_file: ./.env.development
     ports:
       - "6100:6100"
