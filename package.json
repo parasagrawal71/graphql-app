@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "compile": "tsc",
-    "start": "npm run compile && node ./dist/index.js",
-    "start:dev": "npm run compile && nodemon ./dist/index.js"
+    "start": "NODE_ENV=production npm run compile && node ./dist/index.js",
+    "start:dev": "NODE_ENV=development npm run compile && nodemon ./dist/index.js"
   },
   "author": "Paras Agrawal",
   "license": "ISC",
